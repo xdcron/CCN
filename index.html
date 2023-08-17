@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A church based in Nambia known as The Council of Churches Namibia or CCN">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <script defer src="script.js"></script>
+    <title>Council Of Churches Namibia</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-body-tertiary position-fixed w-100"
+    >
+      <div class="container">
+        <a style="text-transform: uppercase;" class="navbar-brand" href="#">
+          <strong>ccn</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About CNN</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#activities">Activities</a>
+            </li>
+            <li>
+              <a class="nav-link" href="events.html" target="_blank">Events</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#aim">Objective</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="member.html" target="_blank">Member Churches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donate">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="d-flex flex-column justify-content-center text-light">
+      <div class="container">
+        <div class="col-12 col-lg-6">
+          <h1>
+            <strong>Council Of Churches Namibia.</strong>
+          </h1>
+          <p class="py-4">
+            A reconciling, healing and caring fellowship of churches united in
+            the service to society.
+          </p>
+          <a href="#about" type="button" class="btn btn-outline-light btn-lg">
+            <strong>Read more</strong>
+          </a>
+          <a style="margin-left: 10px;" target="_blank" href="gallery.html" type="button" class="btn btn-outline-light btn-lg">
+            <strong>View Gallery</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="section container py-5">
+      <div class="row py-5">
+        <div class="d-block d-lg-flex align-items-center">
+          <div class="mb-md-5 about-content col-12 col-lg-6">
+            <h2 class="mb-4"><strong>Words for the heart</strong></h2>
+            <p>🌟 Friends, let's embark on a meaningful journey of devotion this week! 🙏 Join us as we explore the depths of our faith, seeking solace, inspiration, and divine connection. Together, let's open our hearts to the beauty of devotion and allow it to guide us towards inner peace and spiritual growth. 🌿✨</p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <video class="w-100" type="video/mp4" src="video/vid1.mp4" controls>
+        </div>
+        </div>
+      </div>
+      </section>
+
+    <section class="section bg-light py-5" id="about">
+      <div class="container">
+        <div class="row py-5">
+          <div class="d-block d-lg-flex">
+            <div
+              class="mb-md-5 about-content col-12 col-lg-6 d-flex flex-column justify-content-center"
+            >
+              <h2 class="mb-4 fs-1">
+                <strong>About Us</strong>
+              </h2>
+              <p>
+                CCN is an ecumenical body, which exist to support and enable
+                churches to respond in faith to the spiritual and socio-economic
+                needs of all God’s people, commissioned to be a prophetic voice
+                of the poor and other people in society.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid shadow rounded" src="images/group-pic.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;border-top-left-radius: 5%; border-top-right-radius: 5%;" class="section container-fluid bg-dark py-5" id="aim">
+      <div class="container">
+        <div class="row g-4">
+          <h2 class="text-center pb-5 text-light"><strong>Our Aim</strong></h2>
+         <div class="row">
+           <div class="col-lg-6 col-md-10 text-light px-5 mb-md-5">
+            <h2>Values</h2>
+             <ul aria-labelledby="Values">
+              <li><p>CCN uphold the dignity of all people as created in the image of God</p></li>
+              <li><p>We are committed stewards of the resources entrusted to us</p></li>
+              <li><p>We promote networking and partnership with other stakeholders</p></li>
+              <li><p>We promote study of the Bible and obedience to Christ</p></li>
+              <li><p>We stand for accountability, transparency and visionary leadership and unity of
+                diversity</p></li>
+              <li><p>We are advocating for justice and human rights</p></li>
+              <li><p>We aspire to be suitable</p></li>
+             </ul>
+            </div>
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+            <img class="img-fluid shadow rounded align-middle" src="images/pic3.jpg" alt="">
+        </div>
+         </div>
+         <div class="row pt-5">
+          <div class="col-lg-6 col-md-10 text-light px-5 mb-md-5">
+            <h2>Obejectives</h2>
+            <ul aria-labelledby="Objectives">
+             <li><p>To foster unity which is Christ will in assisting the churches to proclaim the Gospel</p></li>
+             <li><p>To undertake theological reflection and study on the role of the council</p></li>
+             <li><p>To coordinate and consolidate the activates of the member churches</p></li>
+             <li><p>To promote and protect the interest of the member churches in the matters arising</p></li>
+             <li><p>To assist people in need and promote development through self-help projects</p></li>
+             <li><p>To cooperate and work together with affiliated organizations in achieving common
+              objectives</p></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+            <img class="img-fluid shadow rounded align-middle" src="images/pic4.jpg" alt="">
+        </div>
+         </div>
+         <div class="row pt-5">
+          <div class="col-lg-6 col-md-10 text-light px-5 mb-md-5">
+            <h2>Succeses</h2>
+            <ul aria-labelledby="Succeses">
+             <li><p>Training church leaders on causes and prevention of suicide. 
+            </p></li>
+             <li><p>Assisting the government in the coordination of COVID19 programmes 
+            </p></li>
+             <li><p>Running HIV/AIDS programmes together  with member churches
+            </p></li>
+             <li><p>Training leaders on how to address gender based violence in their churches
+            </p></li>
+             <li><p>Facilitating youth programmes on behaviour change 
+            </p></li>
+             <li><p>Involved in addressing educational crisis in the country 
+            </p></li>
+             <li><p>Training church leaders as conflict mediators in their community in association with SADC
+            </p></li>
+             <li><p>Healing and Reconciling families, youth desk on LGBTI programmme, reducing stigma, discrimination and violence. Promoting human rights. 
+            </p></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+            <img class="img-fluid shadow rounded align-middle" src="images/pic11.jpg" alt="">
+        </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="activities">
+        <div class="row g-4 py-5">
+            <h2 class="text-center mb-4 mb-md-5 fs-1">
+                <strong>Activities</strong>
+            </h2>
+            <div class="col-12">
+                <div class=" col-12 card bg-dark text-light shadow p-4">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title text-center">
+                            <strong>Food Production Workshops</strong>
+                        </h5> -->
+                        <p class="card-text text-center my-4">Raising awareness and educating church leaders on the importance of food production and food security in Namibia.</p>
+                        <p class="card-text text-center my-4">Facilitate programmes on justice and human right – e.g. German-Namibia genocide issue.</p>
+                        <p class="card-text text-center my-4">Advocate for good governance and corrupt free leadership.</p>
+                        <p class="card-text text-center my-4">Train member churches on social contemporary issues – HIV and Gender Based Violence.</p>
+                        <p class="card-text text-center my-4">Trainer church and community leaders on using scriptures in addressing current
+                            challenges.</p>
+                            <p class="card-text text-center my-4">Solicit funds and network with member churches and other organizations in addressing
+                                socio-economic challenges.</p>
+                                <p class="card-text text-center my-4">Facilitating youth behaviour change programmes together with member churches.</p>
+                        <!-- <div class="d-flex justify-content-center">
+                            <a href="#" class="btn shadow">
+                                
+                            </a>
+                        </div> -->
+                    </div>
+                </div> 
+            </div>
+    </section>
+    <section class="container">
+      <div class="row g-4 py-5 d-flex">
+        <h2 class="text-center mb-4 mb-md-5 fs-1">
+          <strong>
+            News
+        </strong>
+      </h2>
+
+   <div class="d-flex flex-wrap justify-content-center gap-2 m-auto" style="overflow-x: auto;">   
+    <div class="card  px-0" style="width: 20rem;">
+    <img src="images/zim-news.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> 
+  <div class="card  px-0" style="width: 20rem;">
+    <img src="images/zim-news.png" class="card-img-top " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> 
+  <div class="card  px-0" style="width: 20rem;">
+    <img src="images/zim-news.png" class="card-img-top " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> 
+  <div class="card  px-0" style="width: 20rem;">
+    <img src="images/zim-news.png" class="card-img-top " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> 
+  <div class="card  px-0" style="width: 20rem;">
+    <img src="images/zim-news.png" class="card-img-top " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> 
+</div>
+      </div>
+    </section>
+
+    <section id="donate" class="section bg-light py-5">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center text-dark">
+            <h2 class="pb-3"><strong>Why You Should Donate</strong></h2>
+            <p>
+              Hey there, awesome friend! 🌟 When you support CCN, you're not just donating, you're making a positive impact. Your generosity helps us spread love, hope, and kindness within our community and beyond. Together, we can create a ripple of change that brightens lives, offers support, and fosters togetherness. Your contribution, big or small, fuels our mission to make the world a better place. Join hands with us today and let's make a difference together! 🙏❤️
+            </p>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-md-5">
+            <h2 style="text-transform: uppercase;">donate here</h2>
+          <p>Council of Churches in Namibia</p>
+          <p>Standard Bank, Code: 082372</p>
+          <p>Account Number: 041459156</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section bg-dark pt-1">
+      <p style="font-size: 2rem;" class="text-center text-light mb-1"><strong>Our Location</strong></p>
+      <div class="section" id="map"></div>
+    </div>
+     <footer class="container-fluid bg-dark py-5">
+     <div class="row d-flex">
+    <div id="contact" class="text-light d-flex flex-column justify-content-center align-items-center">
+      <p style="text-transform: uppercase; font-size: 2rem; padding-right: 1rem;"><strong>Find us at</strong></p>
+      <address>
+        <p>Abraham Mashegostr street</p>
+        <p>Katutura</p>
+        <p>Windhoek, Namibia</p>
+        <p>Email: ccnprog@nawa.co.na</p>
+        <p>Phone: +264 81 143 5753</p>
+      </address>  
+    </div>
+      <div class="my-sm-4 d-flex justify-content-center align-items-center w-100">
+        <img style="max-width: 150px;padding-right: 1rem;" class="img-fluid" src="images/logo.png" alt="logo">
+      </div>
+      <div class=" text-light d-flex flex-column align-items-center justify-content-center m-lg-auto">
+        <h3 class="text-center">socials</h3>
+        <ul class="d-flex gap-3 me-4" style="list-style: none;">
+          <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100086690268375"><img src="images/facebook.svg" alt="facebook"></a></li>
+          <li><a target="_blank" href="https://twitter.com/CcnNamibia"><img src="images/twitter.svg" alt="twitter"></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/reel/CvrbI8tNeDh/?igshid=MzRlODBiNWFlZA=="><img src="images/instagram.svg" alt="instagram"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/council-of-churches-ccn-188788280/"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/@CCN-Namibia"><img src="images/youtube.svg" alt="youtube"></a></li>
+          <li><a target="_blank" href="https://www.tiktok.com/@ccnnamibia?_t=8ekHtb9ixok&_r=1"><img src="images/tiktok.svg" alt="tiktok"></a></li>
+        </ul>
+      </div>
+     </div>
+     </footer> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
