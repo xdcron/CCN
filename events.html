@@ -1,112 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Events from CCN">
-        <link rel="stylesheet" href="style.css" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-          crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-        <link rel="icon" href="images/logo.png" type="image/png" />
-        <script defer src="script.js"></script>
-        <title>Events</title>
-      </head>
-<body>
-    <header class="d-flex flex-column justify-content-center text-light bg-img-bible">
-        <div class="container">
-          <div class="col-12 text-center">
-            <h1 class="mb-3">
-              <strong>Events</strong>
-            </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Events from CCN" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <script defer src="script.js"></script>
+    <title>Events</title>
+  </head>
+  <body>
+    <header
+      class="d-flex flex-column justify-content-center text-light bg-img-bible"
+    >
+      <div class="container">
+        <div class="col-12 text-center">
+          <h1 class="mb-3">
+            <strong>Events</strong>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main class="container py-5">
+      <h1 class="text-center pb-3"><strong>All Events</strong></h1>
+      <ul class="list-group list-group-flush py-5">
+        <li class="list-group-item">
+          <div class="card mb-3" style="max-width: 100%; border: none">
+            <div class="row g-0">
+              <div class="col-md-4" style="max-width: 421px; max-height: 219px">
+                <img
+                  src="images/zim-news.png"
+                  class="img-fluid rounded h-100 w-100"
+                  alt="Poster for event"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Pastoral Statement</h5>
+                  <p class="card-text" style="text-transform: uppercase">
+                    The Zimbabwen head of denomination (ZHOCD) would like to
+                    address the country as we prepare for upcoming elections.
+                  </p>
+                  <p class="card-text">15 July 2023</p>
+                  <a
+                    href="https://drive.google.com/file/d/1eacajoaTc0lxvu_2z1bKVwxiRcD_BzHm/view?usp=sharing"
+                    class="btn btn-outline-dark"
+                    target="_blank"
+                    >read more</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
+        </li>
+        <li class="list-group-item mt-4">
+          <div class="card mb-3" style="max-width: 100%; border: none">
+            <div class="row g-0">
+              <div class="col-md-4" style="max-width: 421px; max-height: 219px">
+                <img
+                  src="images/foccisa.jpeg"
+                  class="img-fluid rounded w-100 h-100"
+                  alt="Poster for event"
+                  style="max-height: 219.14px"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ZIMBBABWE DECIDES – 2023 GENERAL ELECTIONS
+                  </h5>
+                  <p class="card-text" style="text-transform: uppercase">
+                    Ecumenical service of prayer and solidarity with the people
+                    of Zimbabwe as they go to the polls.
+                  </p>
+                  <p class="card-text">16 August 2023 / 1300HRS - 1430HRS</p>
+                  <a
+                    href="https://us.docs.wps.com/l/sIPaBtu8fqoH3pgY?sa=00&st=0t&v=v2"
+                    class="btn btn-outline-dark"
+                    target="_blank"
+                    >read more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item mt-4">
+          <div class="card mb-3" style="max-width: 100%; border: none">
+            <div class="row g-0">
+              <div class="col-md-4" style="max-width: 421px; max-height: 219px">
+                <img
+                  src="images/event-img.jpg"
+                  class="img-fluid rounded w-100 h-100"
+                  alt="Poster for event"
+                  style="max-height: 219.14px"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Council Of Churches annual meeting</h5>
+                  <p class="card-text" style="text-transform: uppercase">
+                    Dear Church Leaders, we do trust that the year is pleasantly
+                    going well. You are cordially invited to the Council Of
+                    Churches in Namibia (CCN) AGM.
+                  </p>
+                  <p class="card-text" style="text-transform: uppercase">
+                    NB: This is an announcement only to member churches of the
+                    council to send their representatives. Thank you. God Bless
+                    You.
+                  </p>
+                  <p class="card-text">24-25 April 2024 / 8:30AM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="container flex-column">
+        <figure>
+          <img
+            style="height: 500px"
+            src="images/pic13.jpg"
+            class="w-100 rounded-4 object-fit-cover"
+            alt="mining"
+          />
+        </figure>
+        <h3 class="fs-1 text-center">AFRICAN MINING INDABA (AMI)</h3>
+        <p>
+          Namibia had it's first ever Alternative Mining Indaba on the 29th and
+          30th January 2024 at the Roman Catholic Church- St Mary's Cathedral
+          Parish in Windhoek, under the theme- "Increasing Benefits from Mining
+          and Extractive Industries in Namibia to leverage the Country's Social
+          Economic Development challenges- Including Poverty, Unemployment and
+          Inequality, with about 98 participants.
+        </p>
+        <p>
+          The Alternative Mining Indaba in Namibia was organized and hosted by
+          the Social Economic Justice Unit of the Council of Churches in Namibia
+          (CCN) in collaboration with the Economic Justice Network of the
+          Fellowship of Christian Councils in Southern Africa (FOCCISA) with the
+          support of the Norwegian Church Aid and Fredrich Ebert Stiftung.
+        </p>
+        <p>
+          In preparation for the first ever Alternative Mining Indaba-Namibia,
+          the Social Economic Justice Unit of CCN undertook consultative
+          meetings with communities directly affected by Mining and Extractive
+          Industries. These consultations targeted church and community leaders
+          and most of the consultations were done at church venues. In total, 14
+          consultative meetings were held in various villages and towns.
+        </p>
+        <p>
+          During the consultative meetings, communities identified
+          representatives that attended the Alternative Mining Indaba in
+          Windhoek, and about 30 regional delegates attended the AMI from
+          //Karas, Erongo, Kavango East and West, Otjozondjupa
+          and Omaheke region
+        </p>
+        <p>
+          Under the auspices of the Social Economic Justice Unit of CCN, the
+          inaugural AMI Namibia 2024 held from the 29 – 30 January 2024 is part
+          of a National Advocacy Campaign by Namibian churches in collaboration
+          with civil society organizations to address the deteriorating social
+          economic conditions in Namibia. Under this campaign, the civil society
+          sector is championing current and ongoing interventions around poverty
+          eradication, social protection and land reform. The AMI Namibia 2024
+          will thus be part of the broader advocacy agenda that seeks
+          constructive engagement of national, regional and global policymakers
+          towards an improved enabling environment aiming to achieve increased
+          benefits from mining and extractive industries to positively impact
+          the socio-economic development challenges that confront us both
+          nationally and globally.
+        </p>
+        <p>
+          he Outcomes Framework therefore against this background emanates from
+          the consultative processes that engaged communities in seven (7)
+          regions (incl. //Kharas, Erongo, Kavango East/West, Otjozondjupa,
+          Omaheke and Khomas) directly affected by the operations of mining and
+          extractive industry operations in Namibia. The AMI Namibia 2024 as a
+          national platform harnest broader civil society participation and
+          input on this important industry in the country, validating community
+          experiences and infusing additional further inputs from national,
+          regional, continental
+        </p>
+      </div>
+    </main>
+    <footer class="container-fluid bg-dark py-5">
+      <div class="row d-flex">
+        <div
+          class="my-sm-4 d-flex justify-content-center align-items-center w-100"
+        >
+          <img
+            style="max-width: 150px; padding-right: 1rem"
+            class="img-fluid"
+            src="images/logo.png"
+            alt="logo"
+          />
         </div>
-      </header>
-        <main class="container py-5">
-            <h1 class="text-center pb-3"><strong>All Events</strong></h1>
-            <ul class="list-group list-group-flush py-5">
-                <li class="list-group-item">
-                    <div class="card mb-3" style="max-width: 100%; border: none;">
-                        <div class="row g-0">
-                          <div class="col-md-4" style="max-width: 421px;  max-height: 219px;">
-                            <img src="images/zim-news.png" class="img-fluid rounded h-100 w-100" alt="Poster for event">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Pastoral Statement</h5>
-                              <p class="card-text" style="text-transform: uppercase;">The Zimbabwen head of denomination (ZHOCD) would like to address the country as we prepare for upcoming elections.</p>
-                              <p class="card-text">15 July 2023</p>
-                             <a href="https://drive.google.com/file/d/1eacajoaTc0lxvu_2z1bKVwxiRcD_BzHm/view?usp=sharing" class="btn btn-outline-dark" target="_blank">read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </li>
-                <li class="list-group-item mt-4">
-                    <div class="card mb-3" style="max-width: 100%; ; border: none;">
-                        <div class="row g-0">
-                          <div class="col-md-4" style="max-width: 421px; max-height: 219px;">
-                            <img src="images/foccisa.jpeg" class="img-fluid rounded w-100 h-100" alt="Poster for event" style="max-height: 219.14px;">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">ZIMBBABWE DECIDES – 2023 GENERAL ELECTIONS</h5>
-                              <p class="card-text" style="text-transform: uppercase;">Ecumenical service of prayer and solidarity with the people of Zimbabwe as they go to the polls.</p>
-                              <p class="card-text">16 August 2023 / 1300HRS - 1430HRS</p>
-                             <a href="https://us.docs.wps.com/l/sIPaBtu8fqoH3pgY?sa=00&st=0t&v=v2" class="btn btn-outline-dark" target="_blank">read more</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </li>       
-                <li class="list-group-item mt-4">
-                    <div class="card mb-3" style="max-width: 100%; ; border: none;">
-                        <div class="row g-0">
-                          <div class="col-md-4" style="max-width: 421px; max-height: 219px;">
-                            <img src="images/event-img.jpg" class="img-fluid rounded w-100 h-100" alt="Poster for event" style="max-height: 219.14px;">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Council Of Churches annual meeting</h5>
-                              <p class="card-text" style="text-transform: uppercase;">Dear Church Leaders, we do trust that the year is pleasantly going well. You are cordially invited to the Council Of Churches in Namibia (CCN) AGM.</p>
-                              <p class="card-text" style="text-transform: uppercase;">NB: This is an announcement only to member churches of the council to send their representatives. Thank you. God Bless You.</p>
-                              <p class="card-text">24-25 April 2024 / 8:30AM</p>
-                
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </li>       
-              </ul>
-        </main>
-      <footer class="container-fluid bg-dark py-5">
-        <div class="row d-flex">
-         <div class="my-sm-4 d-flex justify-content-center align-items-center w-100">
-           <img style="max-width: 150px;padding-right: 1rem;" class="img-fluid" src="images/logo.png" alt="logo">
-         </div>
-         <div class=" text-light d-flex flex-column align-items-center justify-content-center m-lg-auto">
-           <h3 class="text-center">socials</h3>
-           <ul class="d-flex gap-3 me-4" style="list-style: none;">
-             <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100086690268375"><img src="images/facebook.svg" alt="facebook"></a></li>
-             <li><a target="_blank" href="https://twitter.com/CcnNamibia"><img src="images/twitter.svg" alt="twitter"></a></li>
-             <li><a target="_blank" href="https://www.instagram.com/reel/CvrbI8tNeDh/?igshid=MzRlODBiNWFlZA=="><img src="images/instagram.svg" alt="instagram"></a></li>
-             <li><a target="_blank" href="https://www.linkedin.com/in/council-of-churches-ccn-188788280/"><img src="images/linkedin.svg" alt="linkedin"></a></li>
-             <li><a target="_blank" href="https://www.youtube.com/@CCN-Namibia"><img src="images/youtube.svg" alt="youtube"></a></li>
-             <li><a target="_blank" href="https://www.tiktok.com/@ccnnamibia?_t=8ekHtb9ixok&_r=1"><img src="images/tiktok.svg" alt="tiktok"></a></li>
-           </ul>
-         </div>
+        <div
+          class="text-light d-flex flex-column align-items-center justify-content-center m-lg-auto"
+        >
+          <h3 class="text-center">socials</h3>
+          <ul class="d-flex gap-3 me-4" style="list-style: none">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100086690268375"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/CcnNamibia"
+                ><img src="images/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/reel/CvrbI8tNeDh/?igshid=MzRlODBiNWFlZA=="
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/council-of-churches-ccn-188788280/"
+                ><img src="images/linkedin.svg" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/@CCN-Namibia"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.tiktok.com/@ccnnamibia?_t=8ekHtb9ixok&_r=1"
+                ><img src="images/tiktok.svg" alt="tiktok"
+              /></a>
+            </li>
+          </ul>
         </div>
-        </footer> 
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
